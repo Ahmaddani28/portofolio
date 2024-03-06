@@ -1,0 +1,156 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10pt;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+nav {
+    background-color: #333;
+    color: #bbb;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    transition: background-color 300ms;
+}
+nav.transparent {
+    background-color: #3330;
+}
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #eee;
+}
+nav .brand {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+nav ul {
+    display: flex;
+    margin: 0 0 0 auto;
+    list-style: none;
+    align-items: center;
+    padding: 8px 0;
+}
+nav ul li {
+    margin: 0;
+    padding: 3px 6px;
+}
+nav .container {
+    display: flex;
+    align-items: center;
+}
+/* HEADER END */
+
+/* HOME */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #eee;
+    background-color: black;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    /* background-color: rgba(0,0,0,0.5); */
+    background: radial-gradient(ellipse, #0004, #0009);
+}
+#home .content {
+    z-index: 50;
+    padding: 0 20px;
+}
+#home h1 {
+    font-size: 4em;
+    margin: 0;
+}
+#home p {
+    font-size: 1.5em;
+    margin: 2em 0 0 0;
+}
+/* HOME END */
+
+/* ABOUT */
+#about .img-profile {
+    max-height: 80vh;
+    float: left;
+    margin-right: 20px;
+}
+#about p {
+    text-indent: 3em;
+    line-height: 2em;
+    text-align: justify;
+}
+#about table {
+    text-align: left;
+    line-height: 2em;
+}
+/* ABOUT END */
+
+/* KEAHLIAN */
+#keahlian .icon {
+    font-size: 1.5em;
+}
+/* KEAHLIAN END */
+
+/* UMUM */
+.container {
+    display: block;
+    width: min(100%, 840px);
+    margin: 0 auto;
+    padding: 4px 8px;
+}
+.section {
+    padding-top: 50px;
+    clear: both;
+}
+.section h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  
+  .flex-container > div {
+    width: calc(100% / 3);
+    padding: 10px;
+  }
+  .flex-container > div > div{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    height: 100%;
+  }
+
+.flex2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex2 > div {
+    width: calc(100% / 2);
+    padding: 10px;
+}
+input {
+    padding: 20px;
+    width: 250%;
+}
